@@ -7,6 +7,7 @@
 	</head>
 
 	<body>
+	<div>我的网站</div>
 	<div id=app></div><script type=text/javascript src=/static/js/manifest.56d144c4ff4c2d9b786e.js></script>
 	<script type=text/javascript src=/static/js/vendor.066b5bb46871281b86e3.js></script>
 	<script type=text/javascript src=/static/js/app.6393fb5036e798ce26fd.js></script>
