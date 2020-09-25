@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html>
-	<head>
-	<meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1">
-	<title>takin0</title>
-	<link href=/static/css/app.a6a565836da9847cce8914ea3b4051c5.css rel=stylesheet>
-	</head>
+<head>
+<meta charset=utf-8>
+<meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
+<meta name="description" content="博客 & 静态 网页">
+<meta name="author" content="takin0">
+<meta http-equiv="refresh" content="1">
+<title>takin0</title>
+<link href=/static/css/app.a6a565836da9847cce8914ea3b4051c5.css rel=stylesheet>
+</head>
 
-	<body>
-	<p>我的网页</p>
-	<div id=app></div><script type=text/javascript src=/static/js/manifest.56d144c4ff4c2d9b786e.js></script>
-	<script type=text/javascript src=/static/js/vendor.066b5bb46871281b86e3.js></script>
-	<script type=text/javascript src=/static/js/app.6393fb5036e798ce26fd.js></script>
-	</body>
-	
-	<!--[if !IE]><!--><script>if (/*@cc_on!@*/false) {
-    document.documentElement.className+=' ie10';
-  }</script><!--<![endif]-->
-  
-  </html>
+<body>
+<p>我的网页</p>
+<canvas id="myCanvas">你的浏览器不支持 HTML5 canvas 标签。</canvas>
+
+<script>
+var c=document.getElementById('myCanvas');
+var ctx=c.getContext('2d');
+ctx.fillStyle='#FF0000';
+ctx.fillRect(0,0,80,100);
+</script>
+</body>	 
+
+</html>
