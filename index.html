@@ -19,7 +19,7 @@
 
 <canvas id="myCanvas">你的浏览器不支持 HTML5 canvas 标签。</canvas>
  
-<pid="myclock"></p>
+<p id="myclock"></p>
  
  
 <script>
@@ -40,15 +40,15 @@ document.getElementById('chkbtn')addEventListener('click',funtion(){
 	
 functiondisptime(){
  
-vartoday=newDate();
+	vartoday=newDate();
  
-varhh=today.getHours();
+	varhh=today.getHours();
  
-varmm=today.getMinutes();
+	varmm=today.getMinutes();
  
-varss=today.getSeconds();
+	varss=today.getSeconds();
  
-document.getElementById("myclock").innerHTML="<h1>现在是—"+hh+":"+mm+":"+ss+"</h1>"
+	document.getElementById("myclock").innerHTML="<h1>现在是—"+hh+":"+mm+":"+ss+"</h1>"
  
 　　}
  
