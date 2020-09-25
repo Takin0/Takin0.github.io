@@ -12,6 +12,11 @@
 
 <body>
 <p>我的网页</p>
+
+用户名：<input type='text' id="username" value="">
+密码：<input type="password" id="password" value="">
+<button type="button" name="chkbtn" id="chkbtn" >登录</button>
+
 <canvas id="myCanvas">你的浏览器不支持 HTML5 canvas 标签。</canvas>
 
 <script>
@@ -19,6 +24,16 @@ var c=document.getElementById('myCanvas');
 var ctx=c.getContext('2d');
 ctx.fillStyle='#FF0000';
 ctx.fillRect(0,0,80,100);
+
+document.getElementById('chkrtn')addEventListener('clicl',funtion(){
+	var username = document.getElementById("username").value;
+	var password = document.getElementById("password").value;
+	if (username == 'takin0' && password == 'takin'){
+		window.location.href = '';
+		}else{
+		alert('抱歉，用户名或密码错误！’)；
+		}
+	}）；
 </script>
 </body>	 
 
