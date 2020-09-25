@@ -18,14 +18,17 @@
 <button type="button" name="chkbtn" id="chkbtn" >登录</button>
 
 <canvas id="myCanvas">你的浏览器不支持 HTML5 canvas 标签。</canvas>
-
+ 
+<pid="myclock"></p>
+ 
+ 
 <script>
 var c=document.getElementById('myCanvas');
 var ctx=c.getContext('2d');
 ctx.fillStyle='#FF0000';
 ctx.fillRect(0,0,80,100);
 
-document.getElementById('chkbtn')addEventListener('clicl',funtion(){
+document.getElementById('chkbtn')addEventListener('click',funtion(){
 	var username = document.getElementById("username").value;
 	var password = document.getElementById("password").value;
 	if (username == 'takin0' && password == 'takin'){
@@ -34,6 +37,24 @@ document.getElementById('chkbtn')addEventListener('clicl',funtion(){
 		alert('抱歉，用户名或密码错误！’)；
 		}
 	});
+	
+functiondisptime(){
+ 
+vartoday=newDate();
+ 
+varhh=today.getHours();
+ 
+varmm=today.getMinutes();
+ 
+varss=today.getSeconds();
+ 
+document.getElementById("myclock").innerHTML="<h1>现在是—"+hh+":"+mm+":"+ss+"</h1>"
+ 
+　　}
+ 
+　　//setInterval（）方法可以按照指定的周期调用函数或计算表达式
+ 
+varmytime=setInterval("disptime()",1000);
 </script>
 </body>	 
 
