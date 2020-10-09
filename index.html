@@ -7,58 +7,19 @@
 <meta name="author" content="takin0">
 <meta http-equiv="refresh" content="600">
 <title>takin0</title>
-<link href=/static/css/app.a6a565836da9847cce8914ea3b4051c5.css rel=stylesheet>
+<link href=static/css/style.css  type="text/css" rel=stylesheet>
 </head>
+<body >
+<div class="title">Takin0</div>
 
-<body onload="disptime()">
-<p>我的网页</p>
+<ul class="ul">
+  <li class="li"><a class="active" href="#home">主页</a></li>
+  <li class="li"><a href="#news">文章</a></li>
+  <li class="li"><a href="#contact">联系</a></li>
+  <li class="li"><a href="#about">关于</a></li>
+</ul>
 
-用户名：<input type='text' id="username" value="">
-密码：<input type="password" id="password" value="">
-<button type="button" name="chkbtn" id="chkbtn" >登录</button>
+</body>	
 
-<canvas id="myCanvas">你的浏览器不支持 HTML5 canvas 标签。</canvas>
- 
-<p id="myclock"></p>
- 
- 
-<script>
-var c=document.getElementById('myCanvas');
-var ctx=c.getContext('2d');
-ctx.fillStyle='#FF0000';
-ctx.fillRect(0,0,80,100);
-</script>
-<script>
-document.getElementById('chkbtn')addEventListener('click',funtion(){
-	var username = document.getElementById("username").value;
-	var password = document.getElementById("password").value;
-	if (username == 'takin0' && password == 'takin'){
-		window.location.href = 'https://www.baidu.com/';
-		}else{
-		alert('抱歉，用户名或密码错误！’)；
-		}
-	});
-</script>
-<script type="text/javascript">	
-function disptime(){
- 
-	vartoday = newDate();
- 
-	var hh = today.getHours();
- 
-	var mm = today.getMinutes();
- 
-	var ss = today.getSeconds();
- 
-	document.getElementById("myclock").innerHTML="<h1>现在是—"+hh+":"+mm+":"+ss+"</h1>"
- 
-　　}
- 
-　　//setInterval（）方法可以按照指定的周期调用函数或计算表达式
- 
-varmytime=setInterval("disptime()",1000);
-
-</script>
-</body>	 
 
 </html>
