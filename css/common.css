@@ -1,0 +1,111 @@
+.header{
+    width: 100%;
+    height: 69px;
+	/* background-image: linear-gradient(to right, #FFFFFF,grey); */
+	background-color: white;
+   /*  background: black; */
+   /* margin: 200px; */
+    color: black;
+	/* border-radius: 3px; */
+   	border-style:none none solid none;
+	 border-color:#F1F1F1;
+	 border-width:1px;
+	 position:sticky;
+	top:0;
+	z-index:999;
+
+
+}
+.header .header-contain{
+    width: 1200px;
+    height: 69px;
+    margin: auto;
+    line-height: 69px;
+	/* background-image: linear-gradient(to right, #FFFFFF,#010101); */
+	/* background-color: #304269; */
+   /*  background: black; */
+
+
+}
+.header .header-contain .logo{
+    float: left;
+    width: 260px;
+    height: 100%;
+}
+.header .header-contain .logo .logo-title{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("../img/lgd.png") no-repeat 50px -25px;
+	background-size: 220px
+}
+.header .header-contain .menu{
+    margin-left: 50px;
+    /*不设float,margin-left不生效*/
+    float: left;
+}
+.header .header-contain .menu li{
+    /*不设width 保持最大行宽,设了width 鼠标移动时li位置会改变*/
+    width: 120px;
+    height: 69px;
+    float: left;
+    text-align: center;
+    /*padding: 0 20px;*/
+}
+.header .header-contain .menu li:hover {
+    border-bottom: 5px solid #EEB422;
+    box-sizing: border-box;
+}
+.header .header-contain .menu .active{
+    border-bottom: 5px solid #FF0000;
+    box-sizing: border-box;
+}
+.header .header-contain .login-box{
+    float: right;
+	
+}
+.header .header-contain .login-box i{
+    font-size: 25px;
+    color: black;
+    vertical-align: -3px;
+}
+
+.footer{
+    width: 100%;
+    background: white;
+	
+
+}
+.footer .footer-content{
+    width: 1200px;
+    margin: auto;
+    text-align: center;
+    color: black;
+    line-height: 35px;
+    padding: 20px 0px;
+    background: white url("../img/lgd.png") no-repeat 180px -5px;
+	background-size: 220px;
+	border-style:none none solid none;
+	border-color: black;
+	 border-width:1px;	
+}
+.footer .footer-content i{
+    font-size: 25px;
+    vertical-align: -2px;
+    color: balck;
+
+}
+.footer .footer-bottom{
+    width: 100%;
+    background: white;
+ 
+}
+.footer .footer-bottom .bottom-content{
+    width: 1200px;
+    background: white;
+    line-height: 50px;
+    margin: auto;
+    text-align: center;
+    color: black;
+	
+}

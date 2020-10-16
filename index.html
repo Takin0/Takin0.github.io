@@ -1,25 +1,260 @@
 <!DOCTYPE html>
-<html>
+<html lang="cn">
 <head>
-<meta charset=utf-8>
-<meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
-<meta name="description" content="博客 & 静态 网页">
-<meta name="author" content="takin0">
-<meta http-equiv="refresh" content="600">
-<title>takin0</title>
-<link href=static/css/style.css  type="text/css" rel=stylesheet>
+	<meta charset="UTF-8">
+    <title>Takin</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <!-- <script src="js/jquery-3.3.1.js"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 </head>
-<body >
-<div class="title">Takin0</div>
-
-<ul class="ul">
-  <li class="li"><a class="active" href="#home">主页</a></li>
-  <li class="li"><a href="#news">文章</a></li>
-  <li class="li"><a href="#contact">联系</a></li>
-  <li class="li"><a href="#about">关于</a></li>
-</ul>
-
-</body>	
-
-
-</html>
+<body>
+    <!--header start-->
+    <div class="header">
+        <div class="header-contain">
+             <div class="logo"><a href="javascript:void(0);" class="logo-title"></a></div>
+             <ul class="menu">
+                 <li class="active"><a href="javascript:void(0);">主 页</a></li>
+                 <li><a href="article.html">文 章</a></li>
+                 <li><a href="games.html">小游戏</a></li>
+                 <li><a href="about.html">关 于</a></li>
+             </ul>
+             <div class="login-box">
+                 <i class="iconfont icon-user"></i>
+                 <span><a href="reg.html">注册</a></span> /
+                 <span><a href="login.html">登录</a></span>
+             </div>
+         </div>
+     </div>
+     <!--header end-->
+ 
+     <!--middle start-->
+     <div class="main">
+         <div class="main-box clearfix">
+             <div class="main-contain">
+                 <!--轮播图-->
+                 <div class="banner">
+                     <ul class="pic">
+                         <li><a href="javascript:void(0)"><img src="img/python01.jpg" alt="图片1"></a></li>
+                         <li><a href="javascript:void(0)"><img src="img/qd01.jpg" alt="图片2"></a></li>
+                         <li><a href="javascript:void(0)"><img src="img/sql01.jpg" alt="图片3"></a></li>
+                         <li><a href="javascript:void(0)"><img src="img/linux01.jpg" alt="图片4"></a></li>
+                     </ul>
+                     <ul class="tab">
+                         <li></li>
+                         <li></li>
+                         <li></li>
+                         <li></li>
+                     </ul>
+                     <ul class="btn">
+                         <!--<li class="left"><</li>-->
+                         <!--<li class="right">></li>-->
+                         <li class="left"><i class="iconfont icon-BAI-zuojiantou"></i></li>
+                         <li class="right"><i class="iconfont icon-BAI-youjiantou"></i></li>
+                     </ul>
+                 </div>
+                 <!--三个框-->
+                 <div class="content">
+                     <ul class="recommend-news">
+                         <li>
+                             <a href="javascript:void(0)"><img src="img/linux02.jpg" alt="图片1"></a>
+                             <p><a href="https://www.baidu.com">Linux基础学习</a></p>
+                         </li>
+                         <li>
+                             <a href="javascript:void(0)"><img src="img/qd02.jpg" alt="图片2"></a>
+                             <p><a href="https://www.baidu.com">web前端基础</a></p>
+                         </li>
+                         <li>
+                             <a href="javascript:void(0)"><img src="img/sql02.jpg" alt="图片3"></a>
+                             <p><a href="https://www.baidu.com">数据库操作</a></p>
+                         </li>
+                     </ul>
+                 </div>
+                 <!--新闻-->
+                 <div class="news clearfix">
+                     <ul class="nav clearfix">
+                         <li class="active">Python</li>
+                         <li>前端</li>
+                         <li>Linux</li>
+                         <li>数据库</li>
+                     </ul>
+                     <ul class="content">
+					 <li>
+                             <div class="clearfix">
+                                 <div class="left">
+                                     <img src="img/python03.jpg" alt="">
+                                 </div>
+                                 <div class="right">
+                                     <p><span>python基础</span></p>
+                                     <p> python进阶 web前端</p>
+                                     <p><span>Flask</span></p>
+                                     <p>Django</p>
+                                 </div>
+                             </div>
+                             <div class="clearfix">
+                                 <div class="left">
+                                     <img src="img/python04.jpg" alt="">
+                                 </div>
+                                 <div class="right">
+                                     <p><span>大数据与智慧学习</span></p>
+                                     <p>numpy pandas matplotlib seaborn</p>
+                                     <p>K邻近算法 线性回归与逻辑回归算法</p>
+                                     <p>决策树算法 随机森林 贝叶斯算法 支持向量机</p>
+                                 </div>
+                             </div>
+                         </li>
+                         
+                         <li>
+                             <div class="clearfix">
+                                 <div class="left">
+                                     <img src="img/qd03.jpg" alt="">
+                                 </div>
+                                 <div class="right">
+                                     <p><span>HTML与HTML5</span></p>
+                                     <p><span>CSS与CSS3</span></p>
+                                     <p><span>JavaScript</span></p>
+                                     <p>HTML DOM</p>
+                                 </div>
+                             </div>
+                             <div class="clearfix">
+                                 <div class="left">
+                                     <img src="img/qd04.jpg" alt="">
+                                 </div>
+                                 <div class="right">
+                                     <p><span>jQuery/3</span></p>
+                                     <p>AJAX</p>
+                                     <p><span>Node.js</span></p>
+                                     <p>vue Angular React</p>
+                                 </div>
+                             </div>
+                         </li>
+                         
+                         <li>
+                             <div class="clearfix">
+                                 <div class="left">
+                                     <img src="img/linux03.jpg" alt="">
+                                 </div>
+                                 <div class="right">
+                                     <p><span>Linux常用命令</span></p>
+                                     <p>Linun内核与shell</p>
+                                     <p>Linux核心编程</p>
+                                     <p>Linux网络与应用</p>
+                                 </div>
+                             </div>
+                             <div class="clearfix">
+                                 <div class="left">
+                                     <img src="img/linux04.jpg" alt="">
+                                 </div>
+                                 <div class="right">
+                                     <p>Linux 系统启动过程</p>
+                                     <p>Linux 忘记密码解决方法</p>
+                                     <p><span>Linux 磁盘管理</span></p>
+                                     <p>Linux apt 命令</p>
+                                 </div>
+                             </div>
+                         </li>
+						 <li>
+                             <div class="clearfix">
+                                 <div class="left">
+                                     <img src="img/sql03.jpg" alt="">
+                                 </div>
+                                 <div class="right">
+                                     <p><span>学习sql</span></p>
+                                     <p><span>Mysql</span></p>
+                                     <p>MongoDB</p>
+                                     <p>Redis</p>
+                                 </div>
+                             </div>
+                             <div class="clearfix">
+                                 <div class="left">
+                                     <img src="img/sql04.jpg" alt="">
+                                 </div>
+                                 <div class="right">
+                                     <p><span>数据库操作</span></p>
+                                     <p>数据库运维</p>
+                                     <p>数据库编程</p>
+                                     <p>数据库架构</p>
+                                 </div>
+                             </div>
+                         </li>
+                     </ul>
+                 </div>
+                 <div class="more">加载更多</div>
+             </div>
+             <div class="aside">
+                 <div class="course">
+                     <p>实践<span>更多</span></p>
+                     <div><img src="img/cs01.jpg" alt=""></div>
+                     <p>Python 项目开发</p>
+                     <hr>
+                 </div>
+                 <div class="course">
+                     <p>学习<span>更多</span></p>
+                     <div><img src="img/python02.jpg" alt=""></div>
+                     <p>Python Web项目</p>
+                     <p>Python 爬虫</p>
+                     <p>Python 大数据</p>
+                     <p>Python 智慧学习</p>
+                     <p>Python 项目实战</p>
+                     <hr>
+                 </div>
+                 
+                 <div class="recommend">
+                     <h2>热门推荐</h2>
+                     <div class="hot clearfix">
+                         <div class="left">
+                             <p class="upper">国内首个比特币勒索病毒案告破，三年获利 500 万 </p>
+                             <p class="lower">热点<span>10月16日</span></p>
+                         </div>
+                         <div class="right">
+                             <img src="img/aaa.jpg" alt="">
+                         </div>
+                     </div>
+                     <div class="hot clearfix">
+                         <div class="left">
+                             <p class="upper">Android Studio 4.1 发布</p>
+                             <p class="lower">热点<span>10月16日</span></p>
+                         </div>
+                         <div class="right">
+                             <img src="img/bbb.jpg" alt="">
+                         </div>
+                     </div>
+                     <div class="hot clearfix">
+                         <div class="left">
+                             <p class="upper">独家对话 RT-Thread 创始人熊谱翔：国产操作系统厚积而薄发 | 人物志</p>
+                             <p class="lower">热点<span>10月16日</span></p>
+                         </div>
+                         <div class="right">
+                             <img src="img/ccc.jpg" alt="">
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+     <!--middle end-->
+ 
+     <!--footer start-->
+     <div class="footer">
+         <div class="footer-content">
+             <p>
+                 <span><a href="javascript:void(0);">关于python</a></span> |
+                 <span><a href="javascript:void(0);">前端知识</a></span> |
+                 <span><a href="javascript:void(0);">Linux及数据库操作</a></span>  
+                 <span>关于我：<a href="javascript:void(0);">Takin0</a></span>
+             </p>
+             <p>
+                 <span><a href="javascript:void(0);">地址:xxxxxxx  </a></span>
+                 <span><a href="javascript:void(0);">联系方式:x00-xxxx-xxx</a></span>
+             </p>
+         </div>
+         <div class="footer-bottom">
+             <p class="bottom-content"> Copyright © 2018 - 2021 XXXXXX. All Rights Reserved</p>
+         </div>
+     </div>
+     <!--footer end-->
+     <script src="js/index.js"></script>
+ </body>
+ </html>
